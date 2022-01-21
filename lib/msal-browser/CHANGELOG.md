@@ -1,8 +1,16 @@
 # Change Log - @azure/msal-browser
 
-This log was last generated on Tue, 04 Jan 2022 00:20:29 GMT and should not be manually modified.
+This log was last generated on Fri, 21 Jan 2022 22:54:54 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 2.21.1
+
+Fri, 21 Jan 2022 22:54:54 GMT
+
+### Patches
+
+- Clear hash only if it contains known response properties #4415 (thomas.norling@microsoft.com)
 
 ## 2.21.0
 
