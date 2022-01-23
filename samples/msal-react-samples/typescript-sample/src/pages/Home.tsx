@@ -9,12 +9,12 @@ export function Home() {
       <>
           <AuthenticatedTemplate>
             <ButtonGroup orientation="vertical">
-              <Button component={RouterLink} to="/profile" variant="contained" color="primary">Request Profile Information</Button>
+              <Button component={RouterLink} to="/sokn" variant="contained" color="primary">Hent sokn</Button>
             </ButtonGroup>
           </AuthenticatedTemplate>
 
           <UnauthenticatedTemplate>
-            <Typography variant="h6" align="center">Please sign-in to see your profile information.</Typography>
+            <Typography variant="h6" align="center">Venligst logg inn for å se på sokn data</Typography>
           </UnauthenticatedTemplate>
       </>
   );
