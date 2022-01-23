@@ -10,7 +10,7 @@ import { CustomNavigationClient } from "./utils/NavigationClient";
 // Sample app imports
 import { PageLayout } from "./ui-components/PageLayout";
 import { Home } from "./pages/Home";
-import { Profile } from "./pages/Profile";
+import { SoknPage } from "./pages/SoknPage";
 
 type AppProps = {
     pca: IPublicClientApplication
@@ -21,7 +21,7 @@ function App({ pca }: AppProps) {
     const history = useHistory();
     const navigationClient = new CustomNavigationClient(history);
     pca.setNavigationClient(navigationClient);
-  
+
     return (
       <MsalProvider instance={pca}>
         <PageLayout>
@@ -32,12 +32,12 @@ function App({ pca }: AppProps) {
       </MsalProvider>
     );
 }
-  
+
 function Pages() {
     return (
         <Switch>
-            <Route path="/profile">
-                <Profile />
+            <Route path="/sokn">
+                <SoknPage />
             </Route>
             <Route path="/">
                 <Home />
